@@ -1,0 +1,361 @@
+
+:root{
+    --primary-color: #0b63e8;
+    --text-dark: #111827;
+    --text-light: #6b7280;
+    --white: #fff;
+    --max-width: 1200px;
+}
+
+.overall-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header_content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html, body {
+    height: 100%;
+    margin: 0;
+    background: url('desk.jpg') no-repeat center center fixed;
+    background-size: cover;} */
+
+body{
+    background-image: url('../img/desk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+.menu-bar{
+    background-color :var(--primary-color);
+    text-align: center;
+    padding: 10px 0;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    
+}
+
+.menu-bar ul li{
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu-bar ul li:hover{
+    background: rgb(32, 133, 228);
+    /* background: rgb(210, 152, 19); */
+    border-radius: 2px;
+}
+
+.menu-bar .fa{
+    margin-right: 8px;
+}
+
+/* submenu 1 */
+
+.sub-menu-1{
+    display: none;
+}
+
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(32, 133, 228);
+    /* background: rgb(210, 152, 19); */
+    margin-top: 13px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #370be8;
+}
+
+/* submenu 2 */
+
+.sub-menu-2{
+    display: none;
+}
+
+
+.menu-bar ul li:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    background: rgb(32, 133, 228);
+    /* background: rgb(210, 152, 19); */
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul li a:hover{
+    color: #370be8;
+}
+
+/* submenu 3 */
+
+.sub-menu-3{
+    display: none;
+}
+
+
+.menu-bar ul li:hover .sub-menu-3 {
+    display: block;
+    position: absolute;
+    background: rgb(32, 133, 228);
+    /* background: rgb(210, 152, 19); */
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-3 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-3 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-3 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-3 ul li a:hover{
+    color: #370be8;
+}
+
+/* Style for Login & Sign-Up Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    /* border-radius: 5px; */
+    text-decoration: none;
+      font-size: 16px;
+    /* color: white; */
+    color: #007bff;
+    transition: 0.3s;
+    background-color: #007bff;
+    
+}
+
+.login-btn {
+    border: #fff;
+}
+
+.signup-btn {
+    background: #007bff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    border-color: #fff;
+}
+
+/* style from web1.css */
+.header_container{
+    max-width: var(--max-width);
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: auto;
+    /* position:relative; */
+    /* position added */
+}
+
+.img-header{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+.header_container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.header_image{
+    /* grid-area: 1/2/2/3; */
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: -5px;
+}
+
+@media(width>1024pxpx){
+    .header_container form{
+        flex-direction: row;
+    }
+
+    .header_container button{
+        width: fit-content;
+    }
+}
+
+.header_image img{
+    width:100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.header_container h1{  
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: var(--text-dark);
+}
+
+.header_container h1 span{
+    color: var(--primary-color);
+}
+
+.header_container form{
+    display: flex;
+    gap: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #f6f4f7;
+    border-radius: 10px;
+}
+
+.header_container .input_row{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    flex: 1;
+}
+
+.header_container .input_group{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.header_container .input_group span{
+    color: var(--text-dark);
+}
+
+.header_container input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.header_container button{
+    width: 100%;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    white-space: nowrap;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;}
+
+.header_container p{
+    margin-bottom:2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: var(--text-light);
+}
+
+/* style from web1.css */

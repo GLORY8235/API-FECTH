@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+    
+    display: flex;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 20px;
+    /* background-image: url('logo2.jpg'); */
+    /* background: rgb(196, 239, 196); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+
+
+}
+.home{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: capitalize;
+
+}
+.home:hover{
+    font-size: 1rem;
+    color: green;
+    /* display: flex; */
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.header{
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid rebeccapurple; */
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background: gray;
+}
+.navbar{
+    display: flex;
+    /* justify-content: space-around; */
+    /* border: 2px solid rebeccapurple; */
+    /* justify-content: space-between; */
+    
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 1cm;
+    /* border: 2px solid rebeccapurple; */
+    /* width: 100%; */
+}
+
+
+
+.brg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: auto;
+    
+}
+
+.brg:hover {
+    background: darkgreen;
+}
+
+/* Style the dropdown container */
+/* Align text and arrow */
+.dropdown-toggle {
+    display: flex;
+    align-items: center;  /* Center vertically */
+    gap: 5px;  /* Add spacing between text and icon */
+}
+
+/* Adjust the icon size */
+.dropdown-toggle svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    gap: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    border-radius: 5px;
+}
+/* .dropdown-menu li {
+    padding: 10px ; 
+} */
+
+.dropdown-menu li a {
+    display: block; /* Ensures full clickable area */
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    /* color: white; */
+    /* text-align: center; */
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.dropdown-menu li a:hover {
+    background-color: green; /* Optional: Adds hover effect */
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    transition: 1s background-color;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.Echofy{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+/* begging body  */
+.wrap{
+    width: 100%;
+    height: auto;
+    border: 2px solid rebeccapurple;
+    display: flex;
+    
+}
+.wrap1{
+    width: 30%;
+    /* height: 100vh; */
+    border: 2px solid rebeccapurple;
+    
+}
+.wrap2{
+    width: 30%;
+    /* height: 100vh; */
+    border: 2px solid rebeccapurple;
+    display: flex;
+}

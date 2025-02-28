@@ -1,0 +1,98 @@
+:root{
+    --accent-color: rgb(32, 133, 228);
+    --base-color: white ;
+    --text-color: black ;
+    --input-color: ;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    font-family: sans-serif, Arial, Helvetica,;
+    font-size: 12pt;
+    color: var(--text-color);
+    text-align:center;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(pic2.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    background-color: var(--base-color);
+    width: max(40px 600px);
+    height: 100vh;
+    padding:10px;
+    border-radius:0 20px 20px 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+h1{
+    font-size:3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* form p{color:black} */
+
+form{
+    width:min(400px, 100%) ;
+    margin-top: 20px ;
+    margin-bottom: 50px ;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+}
+
+form > div{
+    width:100%;
+    display: flex;
+    justify-content:center;
+}
+
+form label{
+    flex-shrink:0;
+    height:50px;
+    width:50px;
+    background-color:var(--accent-color);
+    /* fill: var(--base-color); */
+    border-radius: 10px 0 0 10;
+    display: flex;
+    justify-content: center;
+    align-items :center;
+    font-size:1.5rem;
+    font-weight:500;
+}
+
+form label img{
+    fill: white;
+}
+
+form input{
+    box-sizing:border-box;
+    flex-grow:1;
+    min-width:0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(--accent-color);
+    background-color: var(--input-color);
+
+}
+
+form input:hover{
+    border: var(--accent-color);
+    color: var(--base-color);
+}
