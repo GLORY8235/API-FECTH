@@ -1,9 +1,10 @@
 // Array of background images
 const bgImages = [
-    "blog-1.jpg",
-    "blog-2.jpg",
-    "blog-3.jpg",
-    // "background4.jpg"
+    
+    "blog5.jpg",
+    "blog6.jpg",
+    "blog7.jpg",
+   
 ];
 
 // Select the body (or any specific element) to change background

@@ -9,7 +9,13 @@
     background-repeat: no-repeat;
     /* height: 100vh; */
 }
+.shadow{
+    /* border: 1px solid gray */
+    z-index: 1;
+    position: fixed;  
+    top: 0;  
 
+}
 li{
     list-style: none;
     
