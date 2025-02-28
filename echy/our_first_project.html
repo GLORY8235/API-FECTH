@@ -14,89 +14,102 @@
     <title>our first project</title>
 </head>
 <body>
-    <div class="wrapper">
-<header class="header container">
-    <nav class="navbar">
-        <div class="logo">
-            <i>
-            <img src="logo3.png" alt="" >
-            <i class="Echofy">Echofy</i>
 
-            </i>
-        </div>
-        <ul class="nav-links">
-            <li class="dropdown">
-                <div class="dropdown-toggles">
-                    <a class="home" href="#">Home</a>
-                    <i class="home">
-                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 254, 254);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>                    
-
-                    </i>
-
-                </div>
-            
-                <!-- Dropdown Menu -->
-                <ul class="dropdown-menu">
-                    <li><a href="#">home 1</a></li>
-                    <li><a href="#">home 2</a></li>
-                    <li><a href="#">home 3</a></li>
-                    <li><a href="#">home 4</a></li>
-                    <li><a href="#">home 5</a></li>
-                    <li><a href="#">home 6</a></li>
-                    <li><a href="#">home 7</a></li>
-                </ul>
-            </li>
-            
-            
-            <li class="dropdown">
-                <div class="dropdown-toggles">
-                    <a class="home" href="#" >about</a>  
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 254, 254);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>                    
-
-                 </div> -->
-<!--             
-                Dropdown Menu
-                <ul class="dropdown-menu">
-                    <li><a href="#">Submenu 1</a></li>
-                    <li><a href="#">Submenu 2</a></li>
-                    <li><a href="#">Submenu 3</a></li>
-                </ul>  -->
-            </li>
-            
-            <li class="dropdown">
-                <div class="dropdown-toggles">
-                    <a class="home" href="#">service</a>  
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 254, 254);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>                    
-
-                </div>
-            
-                <!-- Dropdown Menu -->
-                <ul class="dropdown-menu">
-                    <li><a href="#"> service </a></li>
-                    <li><a href="#">service details </a></li>
-                </ul>
-            </li>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo3.png" alt="Logo" height="40"> Echofy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Home -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Page</a>
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="nav-link d-flex align-items-center" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(243, 241, 241); margin-left: 5px;">
+                                <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a href="#">home 1</a></li>
+                            <li><a href="#">home 2</a></li>
+                            <li><a href="#">home 3</a></li>
+                            <li><a href="#">home 4</a></li>
+                            <li><a href="#">home 5</a></li>
+                            <li><a href="#">home 6</a></li>
+                            <li><a href="#">home 7</a></li>
+                            <li><a href="#">home 8</a></li>
+                            <li><a href="#">home 9</a></li>
+                        </ul>
+                    </li>
+    
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+    
+                    <!-- Service -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link d-flex align-items-center" href="#" id="serviceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Service
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(243, 241, 241); margin-left: 5px;">
+                                <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
                             <li><a class="dropdown-item" href="#">Service 1</a></li>
                             <li><a class="dropdown-item" href="#">Service 2</a></li>
                         </ul>
                     </li>
-
+    
+                    <!-- Page -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="nav-link d-flex align-items-center" href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Page
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(243, 241, 241); margin-left: 5px;">
+                                <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pageDropdown">
                             <li><a class="dropdown-item" href="#">Service 1</a></li>
                             <li><a class="dropdown-item" href="#">Service 2</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    
+                    <!-- Blog -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link d-flex align-items-center" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(243, 241, 241); margin-left: 5px;">
+                                <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                            <li><a class="dropdown-item" href="#">Service 1</a></li>
+                            <li><a class="dropdown-item" href="#">Service 2</a></li>
+                        </ul>
+                    </li>
+    
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item  d-flex align-items-center margin-left-5 p-2">  
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(248, 246, 246);transform: ;msFilter:;"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a href="#" class="btn btn-success">Sign Up</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
