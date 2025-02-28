@@ -188,3 +188,18 @@ li{
     border: 2px solid rebeccapurple;
     display: flex;
 }
+.btn-success {
+    /* background-color: blue; */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* width: 1cm; */
+} 
+.btn-contanaer{
+    display: flex;
+    justify-content: center;
+    gap: 1cm;
+    margin-top: 10px;
+    width: 100%;
+}
