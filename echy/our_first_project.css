@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.wrapper {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
 li{
     list-style: none;
     
