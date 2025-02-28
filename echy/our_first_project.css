@@ -209,17 +209,47 @@ li{
 }
 .colo_natural{
     color: green;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-family: sans-serif;
     text-transform: uppercase;
 }
-.be_self_color{
+
+
+
+.be_safe_color{
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+/* .paragraph1{
     color: white;
     text-align: center;
     font-weight: bold;
     font-family: sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
+} */
+
+.paragraph1{
+    color:white;
+}
+
+.btns-container{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2cm;
+    /* width: 20%; */
+    color: white;
+    /* height: 15%; */
+    text-align: center;
+    /* border: 2px solid rebeccapurple; */
+    width: 100%;
 }
 .btns{
     /* display: flex; */
@@ -229,12 +259,24 @@ li{
     gap: 2cm;
     /* width: 20%; */
     color: white;
-    height: 15%;
+    /* height: 15%; */
     text-align: center;
     /* border: 2px solid rebeccapurple; */
     /* width: 100%; */
     border:1px solid  white;
 }
+
+.lf1 svg{
+    
+    fill:white;
+    
+}
+.btns:hover .lf1 svg {
+    fill: green;  /* Changes to green on hover */
+}
+
+
+
 .btns:hover{
     /* display: flex; */
     justify-content: center;
