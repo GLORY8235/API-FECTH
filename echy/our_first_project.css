@@ -139,7 +139,7 @@ li{
     font-family: sans-serif;
     text-transform: capitalize;
 }
-/* begging body  */
+/* begining body  */
 
 
 .btn-success {
@@ -150,6 +150,12 @@ li{
     cursor: pointer;
     /* width: 1cm; */
 } 
+
+/* hover effect for signup button by ofon  */
+/* .nav-item:hover li>a.btn-success {
+    color: green;
+    background-color: white;
+} */
 
 .main{
     justify-content: center;
@@ -227,7 +233,7 @@ li{
 
 /* .paragraph1{
     color: white;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-family: sans-serif;
     text-transform: capitalize;
