@@ -30,3 +30,38 @@ setInterval(changeBackground, 10000);
 
 // Call function immediately to set the first background
 changeBackground();
+
+
+
+
+// typing effect 
+const text = "Hello, welcome to my website!";
+let index = 0;
+let isDeleting = false;
+
+function getRandomColor() {
+    return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+}
+
+function typeEffect() {
+    let displayText = text.substring(0, index);
+    let textElement = document.getElementById("text");
+    textElement.innerHTML = displayText;
+
+    if (!isDeleting && index < text.length) {
+        textElement.style.color = getRandomColor(); // Change color while typing
+        index++;
+        setTimeout(typeEffect, 100); // Typing speed
+    } else if (isDeleting && index > 0) {
+        index--;
+        textElement.style.color = getRandomColor(); // Change color while typing
+
+        setTimeout(typeEffect, 50); // Deleting speed
+    } else {
+        isDeleting = !isDeleting;
+        setTimeout(typeEffect, 3000); // Pause before switching modes
+
+    }
+}
+
+typeEffect();
