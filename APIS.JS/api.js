@@ -27,7 +27,7 @@ weatherForm.addEventListener("submit", async event => {
     const city = cityinput.value.trim();
 
     if (city) {
-        try {
+        try { 
             const weatherData = await getWeatherData(city);
             displayWeatherInfo(weatherData);
         } 
@@ -113,3 +113,10 @@ function displayError(message) {
     card.style.display = "flex";
     card.appendChild(errorDisplay);
 }
+
+
+// Condition	Description
+// Clear Sky ☀️	No clouds or very few.
+// Partly Cloudy 🌤	Some clouds, but still sunny.
+// Cloudy ☁️	Many clouds, little sun visible.
+// Overcast 🌥	Entire sky is covered with clouds.
