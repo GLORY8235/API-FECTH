@@ -4,6 +4,14 @@ document.getElementById('fetchData').addEventListener('click', () => {
         .then(response => {
             const output = document.getElementById('output');
             output.innerHTML = response.data.map(post => `<p>${post.title}</p>`).join('');
+//         output.innerHTML = response.data.map(post => `<p>${post.title}</p>`).join('');
+// 🔹 Extracts post titles from response.data (which is an array).
+// 🔹 map(post => \<p>${post.title}</p>`)`
+// Loops through each post
+// Creates a <p> element for each title
+// 🔹 .join('') converts the array into a single HTML string (removes commas).
+// 🔹 The result is inserted into output.innerHTML, updating the webpage.
+
         })
         .catch(error => {
             console.error('Error fetching data:', error);
